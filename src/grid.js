@@ -1,4 +1,5 @@
 import { LitElement, html, css } from "lit";
+import { MyLeftBar } from "../public/my-leftbar";
 
 export class myGrid extends LitElement{
     static styles = css`         
@@ -27,7 +28,6 @@ export class myGrid extends LitElement{
     .item_1 {
         grid-area: 
         item_1;
-        background-color: red;
     }
     .item_2 {
         grid-area: 
@@ -178,7 +178,9 @@ export class myGrid extends LitElement{
         return html`
                 <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
                 <main>
-                <div class="item_1"></div>
+                <div class="item_1">
+                <my-leftbar></my-leftbar>
+                </div>
                 <div class="item_2"></div>
                 <div class="item_3"></div>
                 <div class="item_4"></div>
