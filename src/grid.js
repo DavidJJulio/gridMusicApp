@@ -41,12 +41,14 @@ export class myGrid extends LitElement{
     .item_3 {
         grid-area: 
         item_3;
-        background-color: aqua;
+        overflow: scroll;
     }
     .item_4 {
         grid-area: 
         item_4;
-        background-color: red;
+        padding-left: 2%;
+        padding-right: 2%;
+        background-color: #f3f3f3;
     }
     
     
@@ -187,8 +189,12 @@ export class myGrid extends LitElement{
                 <div class="item_1">
                 <my-leftbar></my-leftbar>
                 </div>
-                <div class="item_2"></div>
-                <div class="item_3"></div>
+                <div class="item_2">
+                
+                </div>
+                <div class="item_3">
+                <my-tracklist></my-tracklist>
+                </div>
                 <div class="item_4">
                 <my-reproductor></my-reproductor>
                 </div>
