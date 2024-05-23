@@ -47,7 +47,7 @@ export class MyLeftBar extends LitElement {
     return css`
       :host {
         display: flex;
-        height: 100%;
+        height: 100vh;
         flex-direction: column;
         justify-content: space-between;
         align-items: center;

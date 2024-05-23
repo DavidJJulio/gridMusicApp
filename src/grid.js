@@ -1,11 +1,13 @@
 import { LitElement, html, css } from "lit";
-import { MyLeftBar } from "../public/my-leftbar";
+import { MyLeftBar } from "./components/my-leftbar";
+import { TrackList } from "./components/my-track-list";
+customElements.define("my-tracklist", TrackList)
 
 export class myGrid extends LitElement{
     static styles = css`         
         main {
         width: 100%;
-        height: 100%;
+        height: 100vh;
         display: grid;
         grid-template-columns: 0.7fr 4fr 8fr 4fr;
         grid-template-rows: repeat(12, 1fr);
@@ -209,7 +211,9 @@ export class myGrid extends LitElement{
                         <p>Playing next</p>
                     </div>
                 </div>
-                <div class="item_8"></div>
+                <div class="item_8">
+                <my-tracklist></my-tracklist>
+                </div>
                 </main>      
     `
     }
