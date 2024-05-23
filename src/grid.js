@@ -2,6 +2,7 @@ import { LitElement, html, css } from "lit";
 import { MyLeftBar } from "./components/my-leftbar";
 import { TrackList } from "./components/my-track-list";
 import { Reproductor } from "./components/reproductor";
+import { Cardnewmusic } from "./components/newMusic";
 customElements.define("my-reproductor", Reproductor)
 customElements.define("my-tracklist", TrackList)
 
@@ -36,7 +37,6 @@ export class myGrid extends LitElement{
     .item_2 {
         grid-area: 
         item_2;
-        background-color: rebeccapurple;
     }
     .item_3 {
         grid-area: 
@@ -190,7 +190,7 @@ export class myGrid extends LitElement{
                 <my-leftbar></my-leftbar>
                 </div>
                 <div class="item_2">
-                
+                <new-music></new-music>
                 </div>
                 <div class="item_3">
                 <my-tracklist></my-tracklist>

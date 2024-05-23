@@ -345,25 +345,25 @@ export class Reproductor extends LitElement{
           </div>
         </div>
         <div class="change_song">
-          <img src="/Group 45.svg" class="aleatory">
-          <img src="/Group.svg"  class="left">
-          <img src="/play button.svg" class="play">
-          <img src="/Group right.svg" class="right">
-          <img src="/Group 44.svg" class="rewind">
+          <img src="../../public/Group 45.svg" class="aleatory">
+          <img src="../../public/Group.svg"  class="left">
+          <img src="../../public/play button.svg" class="play">
+          <img src="../../public/Group right.svg" class="right">
+          <img src="../../public/Group 44.svg" class="rewind">
         </div>
 
         <div class="song_volumen">
 
           <div class="volumen_line">
-            <img src="/low_sound.svg" class="aleatory">
+            <img src="../../public/low_sound.svg" class="aleatory">
             <input type="range" name="slider" id="slide2">
-            <img src="/up_sound.svg" class="aleatory">
+            <img src="../../public/up_sound.svg" class="aleatory">
           </div>
 
         </div>
         <div class="dispositive">
           <div class="info_dispositive">
-            <img src="/Vector.svg" class="aleatory">
+            <img src="../../public/Vector.svg" class="aleatory">
             <p>${this.dispositive}</p>
           </div>
         </div>
