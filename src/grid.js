@@ -1,6 +1,8 @@
 import { LitElement, html, css } from "lit";
 import { MyLeftBar } from "./components/my-leftbar";
 import { TrackList } from "./components/my-track-list";
+import { Reproductor } from "./components/reproductor";
+customElements.define("my-reproductor", Reproductor)
 customElements.define("my-tracklist", TrackList)
 
 export class myGrid extends LitElement{
@@ -44,7 +46,7 @@ export class myGrid extends LitElement{
     .item_4 {
         grid-area: 
         item_4;
-        background-color: blueviolet;
+        background-color: red;
     }
     
     
@@ -131,7 +133,9 @@ export class myGrid extends LitElement{
     .item_8 {
         grid-area: 
         item_8;
-        background-color: azure;
+        display: flex;
+        height: 83vh;
+        overflow: scroll;
     }
     
     
@@ -185,7 +189,9 @@ export class myGrid extends LitElement{
                 </div>
                 <div class="item_2"></div>
                 <div class="item_3"></div>
-                <div class="item_4"></div>
+                <div class="item_4">
+                <my-reproductor></my-reproductor>
+                </div>
                 <div class="item_5">
                     <h1>Discover new music</h1>
                     <div class="item_5__container">
