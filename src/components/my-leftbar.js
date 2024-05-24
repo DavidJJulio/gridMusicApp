@@ -10,34 +10,34 @@ export class MyLeftBar extends LitElement {
       <div class="container">
         <div class="leftBar__user">
           <a href="#">
-            <img src="../../public/mastercard-line.svg" />
+            <img src="/mastercard-line.svg" />
           </a>
           <a href="#">
-            <img src="../../public/Ellipse 13.svg" />
+            <img src="/Ellipse 13.svg" />
           </a>
         </div>
         <hr class="hr" />
         <div class="leftBar__options">
           <a href="#">
-            <img src="../../public/Frame 24.svg" />
+            <img src="/Frame 24.svg" />
           </a>
           <a href="#">
-            <img src="../../public/Frame 19.svg" />
+            <img src="/Frame 19.svg" />
           </a>
           <a href="#">
-            <img src="../../public/Frame 23.svg" />
+            <img src="/Frame 23.svg" />
           </a>
           <a href="#">
-            <img src="../../public/Frame 20.svg" />
+            <img src="/Frame 20.svg" />
           </a>
         </div>
       </div>
       <div class="leftBar__exit">
         <a href="#">
-          <img src="../../public/Frame 22.svg" />
+          <img src="/Frame 22.svg" />
         </a>
         <a href="#">
-          <img src="../../public/Frame 26.svg" />
+          <img src="/Frame 26.svg" />
         </a>
       </div>
     `;
